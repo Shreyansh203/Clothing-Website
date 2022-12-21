@@ -1,0 +1,325 @@
+#header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px;
+    background: #e3e3e3F9;
+   
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+*{
+    margin: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 6px;
+    list-style: none;
+    
+}
+#navbar li{
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: navy;
+    margin: 0px 18px;
+    /* border: 1px solid black; */
+    padding: 0px 23px;
+    /* background-color: yellow; */
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+#navbar li a:hover{
+    /* background-color: chartreuse; */
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px; */
+    /* margin-left: 8px; */
+    color: #088178;
+    font-weight: bold;
+
+}
+#navbar li a.active{
+    font-weight: bold;
+    color:#088178;
+
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 40px;
+}
+
+/* /homepage/ */
+#main{
+    background-image: url("WhatsApp\ Image\ 2022-10-22\ at\ 21.37.18.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    /* padding: 0 80px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    animation:example 5s infinite;
+    /*animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    */
+}
+
+@keyframes example{
+    0%{
+        background-image: url(yeahee/13.jpg);
+    }
+    25%{
+        background-image: url(yeahee/31.jpg);
+    }
+    50%{
+        background-image: url(yeahee/32.jpg);
+    }
+    99%{
+        background-image: url(yeahee/34.jpg);
+    }
+}
+
+#main button{
+    border: 0;
+    background: transparent;
+    font-weight: 800;
+    cursor: pointer;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 54px rgba(0,0,0,0.1);
+    border: 1px solid #cce7d0;
+    border-radius: 34px;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(0,0,0,0.06);
+    
+}
+#feature .fe-box h6{
+    padding: 5px 6px 5px 6px;
+    border-radius: 7px;
+    background-color: #fddde4;
+    color: #088178;
+    margin-top: 6px;
+}
+#product1 {
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    margin: 60px;
+}
+#product1 .pro{
+    width: 30px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    margin: 15px 0px;
+
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.07);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: left;
+}
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 20px;
+    color: gold;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size:20px;
+    font-weight: 700;
+    color: #088178;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(yeahee/29.jpg);
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 10vh;
+    background-position: center;
+}
+#banner button{
+    border: 0;
+    margin: 20px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#banner button:hover{
+    background-color: #088178;
+    color: white;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(yeahee/15.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    background-image: url(yeahee/14.jpg);
+}
+#sm-banner h4{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2{
+    color: black;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner span{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    border-radius: 9px;
+    
+}
+#sm-banner .banner-box button:hover {
+    background: #088178;
+    border: 2px solid #088178;
+    cursor: pointer;
+}
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(yeahee/11.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+    background-image: url(yeahee/12.jpg);
+}
+
+#banner3 .banner-box3{
+    background-image: url(yeahee/9.jpg);
+}
+#banner3 h2{
+    color: black;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner3 h3{
+    color:  #ec544e;
+    font-weight: 800;
+    font-size: 15px;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 40% 30%;
+    background-color:rgba(4, 4, 68, 0.836);
+}
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+}
+#newsletter h1{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+#newsletter h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
